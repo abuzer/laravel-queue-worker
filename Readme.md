@@ -2,7 +2,7 @@ Create a cron job with:
 
 */5 * * * * <path to scrip>/failsafe.sh >> /var/www/test.log
 
-
+`
 #!/bin/bash
 running_ps=$(ps aux | grep queue)
 needle='artisan queue'
@@ -14,3 +14,4 @@ else
 fi
 
 
+`
